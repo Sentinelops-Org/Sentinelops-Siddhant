@@ -1,2 +1,2 @@
-Env/Dev/.terraform.lock.hcl
-Env/Dev/.terraform/
+env/dev/.terraform/
+env/dev/.terraform.lock.hcl

@@ -9,5 +9,6 @@ resource "azurerm_storage_account" "sentinelops-storage" {
     environment = "dev"
     project     = "sentinelops"
     createdby   = "terraform"
+    owner       = "siddhant"
   }
 }

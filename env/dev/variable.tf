@@ -14,3 +14,20 @@ variable "storage_accounts" {
   }))
   description = "Map of storage accounts and their configurations"
 }
+
+variable "vnets" {
+  type = map(object({
+    resource_group_name = string
+    add_space           = list(string)
+  }))
+  description = "Map of VNet and their configurations"
+}
+
+variable "virtual_machines" {
+  type = map(object({
+    resource_group_name = string
+    vnet_name           = string
+    vm_size             = string
+  }))
+  description = "Map of virtual machines and their network placement"
+}
